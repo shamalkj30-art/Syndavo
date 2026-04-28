@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<title>Terms of Service — Syndavo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #020202; }
+.font-serif { font-family: 'Newsreader', serif; }
+.font-manrope { font-family: 'Manrope', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.spotlight-card { position: relative; border-radius: 4px; background-color: rgba(255, 255, 255, 0.02); overflow: hidden; --mouse-x: 0px; --mouse-y: 0px; }
+.spotlight-card::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4), transparent 40%); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity 0.5s ease; pointer-events: none; z-index: 2; }
+.spotlight-card::after { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: linear-gradient(225deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; z-index: 1; }
+.spotlight-card:hover::before { opacity: 1; }
+@keyframes animationIn { 0% { opacity: 0; transform: translateY(20px); filter: blur(4px); } 100% { opacity: 1; transform: translateY(0); filter: blur(0px); } }
+.animate-on-scroll { animation-play-state: paused !important; }
+.animate-on-scroll.animate { animation-play-state: running !important; }
+@keyframes beam-drop { 0% { top: -100px; opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+.beam { position: absolute; width: 1px; height: 150px; background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5), transparent); animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.beam-delay-1 { animation-delay: 2s; }
+.beam-delay-2 { animation-delay: 4s; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+.legal-prose p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.8; margin-bottom: 1rem; }
+.legal-prose strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+.legal-prose a { color: rgb(165,180,252); text-decoration: underline; text-decoration-color: rgba(165,180,252,0.3); }
+.legal-prose a:hover { text-decoration-color: rgba(165,180,252,0.8); }
+</style>
+</head>
+<body class="selection:bg-indigo-500/30 selection:text-indigo-100 overflow-x-hidden text-white bg-[#020202]">
+
+<div class="border-x border-white/[0.03] min-h-screen w-full max-w-[1440px] mx-auto relative">
+
+    <!-- Background Grid -->
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:12rem_24rem] pointer-events-none z-0"></div>
+
+    <!-- Beams -->
+    <div class="absolute inset-0 flex justify-between pointer-events-none z-0 px-6 md:px-12 lg:px-24">
+        <div class="relative w-px h-full bg-white/[0.03] overflow-hidden"><div class="beam"></div></div>
+        <div class="relative w-px h-full bg-white/[0.03] hidden md:block overflow-hidden absolute left-1/2 -translate-x-1/2"><div class="beam beam-delay-1"></div></div>
+        <div class="relative w-px h-full bg-white/[0.03] overflow-hidden"><div class="beam beam-delay-2"></div></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="relative z-50 border-b border-white/[0.03] backdrop-blur-sm bg-[#020202]/80">
+        <div class="md:px-12 lg:px-24 flex h-20 pr-6 pl-6 items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="services.html" class="text-[13px] hover:text-white transition-colors text-white/60">Services</a>
+                <a href="about.html" class="text-[13px] hover:text-white transition-colors text-white/60">About</a>
+                <a href="methodology.html" class="text-[13px] hover:text-white transition-colors text-white/60">How it works</a>
+                <a href="audit.html" class="text-[13px] hover:text-white transition-colors text-white/60">Contact</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="login.html" class="text-[13px] hover:text-white transition-colors hidden sm:block text-white/60">Client Login</a>
+                <button class="group inline-flex overflow-hidden transition-all duration-300 hover:-translate-y-0.5 rounded-sm p-[1px] relative items-center justify-center" onclick="window.location.href='audit.html'">
+                    <span class="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,transparent_75%,#ffffff_100%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+                    <span class="absolute inset-0 rounded-sm bg-zinc-800 transition-opacity duration-300 group-hover:opacity-0"></span>
+                    <span class="flex items-center gap-2 group-hover:text-white text-[11px] font-medium text-zinc-300 bg-black rounded-sm py-2 px-4 relative">
+                        <span class="relative z-10 uppercase tracking-widest font-sans">Book discovery meeting</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="z-10 relative">
+
+        <!-- Hero -->
+        <section class="md:px-12 lg:px-24 md:py-32 grid lg:grid-cols-12 gap-12 border-white/[0.03] border-b pt-24 pr-6 pb-24 pl-6 items-end">
+            <div class="lg:col-span-12 flex flex-col gap-8">
+                <div class="[animation:animationIn_0.8s_ease-out_0.1s_both] animate-on-scroll animate">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-sm border border-white/10 bg-white/[0.02] text-[10px] font-medium tracking-widest text-white/60 uppercase font-sans">
+                        <span class="w-1 h-1 rounded-full bg-white/40"></span>
+                        Legal · Last updated April 2026
+                    </span>
+                </div>
+                <h1 class="font-serif text-[2.75rem] sm:text-5xl lg:text-7xl leading-[0.95] text-white tracking-tight [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+                    <span class="block text-white/80 font-newsreader font-light">Terms of</span>
+                    <span class="block font-light italic font-newsreader">Service.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white/50 max-w-xl leading-relaxed font-light [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate font-sans">
+                    Plain English. No fine print. These terms govern how we engage with founders, operators, and companies that hire Syndavo. Read them once — they protect you as much as they protect us.
+                </p>
+            </div>
+        </section>
+
+        <!-- Body -->
+        <section class="p-6 md:p-12 lg:p-24 bg-[#050505] border-b border-white/[0.03]">
+            <div class="max-w-4xl mx-auto grid gap-4">
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">01</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Who we are</h2>
+                        </div>
+                        <p>Syndavo is a consulting and technology advisory firm serving founders and operators internationally. In these terms, <strong>"Syndavo"</strong>, <strong>"we"</strong>, <strong>"us"</strong>, and <strong>"our"</strong> refer to Syndavo LLC and its affiliates. <strong>"You"</strong> means the individual or company engaging us under a Statement of Work ("SOW"), proposal, or retainer agreement.</p>
+                        <p>By accepting a Syndavo proposal, signing an SOW, or paying an invoice from us, you agree to these terms.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.25s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">02</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Scope of engagement</h2>
+                        </div>
+                        <p>Every engagement is defined by a written proposal or SOW. That document is the source of truth for deliverables, timelines, fees, and responsibilities. If it isn't written in the SOW, it isn't part of the engagement.</p>
+                        <p>We deliver within 48 hours of a discovery call a clear proposal with scope, timeline, and fee. You're welcome to accept, negotiate, or walk away — no obligation either direction.</p>
+                        <p>Scope changes happen. If a change is material, we'll document it in writing and adjust fees or timeline before continuing the work.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">03</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Fees &amp; payment</h2>
+                        </div>
+                        <p>Fees are fixed per project or billed monthly for retainers — no hidden hourly escalations. Invoices are due within <strong>14 days</strong> of issue unless your SOW says otherwise.</p>
+                        <p>Project-based engagements typically require a <strong>40% deposit</strong> on signature, with the remainder on delivery. Retainers bill monthly in advance and can be paused or cancelled with <strong>30 days' notice</strong>.</p>
+                        <p>Late payments accrue interest at 1.5% per month on the outstanding balance. If an invoice remains unpaid past 45 days, we may pause active work until the account is current.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.35s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">04</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Intellectual property</h2>
+                        </div>
+                        <p>Deliverables we create for you — strategy documents, go-to-market plans, roadmaps, source code, and written artefacts — become <strong>your property</strong> upon full payment. You own what you paid for.</p>
+                        <p>We retain rights to our pre-existing frameworks, methodologies, internal tools, and generalised know-how. Nothing in an SOW transfers those unless explicitly stated.</p>
+                        <p>We do not publicise engagements without your written permission. See Section 05 below for how we handle confidentiality, marketing references, and NDAs.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">05</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Confidentiality &amp; NDA</h2>
+                        </div>
+                        <p><strong>Default stance: nothing leaves the room.</strong> No one — outside you and the Syndavo team assigned to your engagement — learns anything about your project, your idea, your financials, your pitch, your code, or your customer list unless you explicitly authorise it in writing.</p>
+                        <p>This applies automatically from the first discovery call, before any paperwork is signed. We treat everything you share as confidential — business plans, financials, pitch decks, source code, customer lists, investor conversations, internal metrics, strategic reasoning, and anything else that is not already public.</p>
+                        <p>We will not:</p>
+                        <ul class="list-none pl-6 space-y-2 mb-4">
+                            <li class="text-white/60 text-[15px] leading-relaxed">— Reference your company, logo, or engagement in our marketing, case studies, press, or website without your <strong>prior written consent</strong>.</li>
+                            <li class="text-white/60 text-[15px] leading-relaxed">— Share your materials with subcontractors, advisors, or third parties, except where you have approved the specific party in writing.</li>
+                            <li class="text-white/60 text-[15px] leading-relaxed">— Use your confidential information to advise a competing company — we screen every engagement against active clients to avoid conflicts.</li>
+                            <li class="text-white/60 text-[15px] leading-relaxed">— Publish, tweet, or post about your project in any form.</li>
+                        </ul>
+                        <p><strong>Mutual NDA, on request, before the first call.</strong> If you want a signed mutual non-disclosure agreement before our discovery meeting, email <a href="mailto:hello@syndavo.com">hello@syndavo.com</a> with "NDA" in the subject line and we'll send one back within the same business day. If you have your own NDA template, send it — we'll sign reasonable mutual NDAs without negotiation.</p>
+                        <p>This confidentiality obligation continues for <strong>five years</strong> after the engagement ends, and <strong>indefinitely</strong> for trade secrets, source code, and any material you designate as trade-secret-level.</p>
+                        <p>Exceptions are narrow: we may disclose information if (a) you give written permission, (b) the information becomes public through no fault of ours, or (c) we're legally compelled by a court order — in which case we'll notify you first, where the law allows, so you can seek a protective order.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.45s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">06</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">What we don't do</h2>
+                        </div>
+                        <p>Syndavo provides strategic and technical advisory services. We are not lawyers, accountants, tax advisors, or licensed financial professionals. Our recommendations are commercial and operational, not legal or financial.</p>
+                        <p>We'll flag when you need a specialist and happily introduce you to one from our network.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">07</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Warranties &amp; liability</h2>
+                        </div>
+                        <p>We perform our services with the skill and care expected of a professional consulting firm. We do not, however, guarantee specific business outcomes — fundraising success, user growth, or revenue — because those depend on factors outside our control.</p>
+                        <p>To the maximum extent permitted by law, Syndavo's total liability for any claim arising out of an engagement is capped at <strong>the fees paid for that engagement</strong> in the six months preceding the claim.</p>
+                        <p>Neither party is liable for indirect, consequential, or punitive damages, including lost profits or lost opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.55s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">08</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Termination</h2>
+                        </div>
+                        <p>Either party can terminate a project engagement at any time with written notice. You pay for work completed up to the termination date; we deliver any work-in-progress artefacts upon final payment.</p>
+                        <p>Retainers can be cancelled with <strong>30 days' notice</strong>. No long contracts, ever.</p>
+                        <p>We may end an engagement if you materially breach these terms or if continuing would require us to act unethically, unlawfully, or against the interests of a prior client.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.6s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">09</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Third-party tools</h2>
+                        </div>
+                        <p>We use third-party platforms — Google Workspace, Notion, Linear, Figma, GitHub, Slack, and similar — to collaborate with clients. By engaging us, you accept that your project materials may be stored on those platforms under their standard terms. We choose vendors with strong security postures and will match any specific compliance requirements documented in your SOW.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.65s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">10</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Governing law &amp; disputes</h2>
+                        </div>
+                        <p>These terms are governed by the laws of the <strong>State of Wyoming, United States</strong>, without regard to conflict-of-law principles. Any dispute that cannot be resolved informally will be settled by binding arbitration, conducted in English, with the seat of arbitration in Cheyenne, Wyoming — or remotely by mutual agreement.</p>
+                        <p>Before arbitration, both parties agree to attempt resolution through a <strong>30-day good-faith negotiation period</strong>. Most disagreements get resolved on a call.</p>
+                        <p>Because Syndavo works with clients across multiple jurisdictions, we'll accommodate reasonable requests to add a supplementary jurisdiction clause in your SOW (for example, recognising local consumer-protection law in your country).</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.7s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">11</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Changes to these terms</h2>
+                        </div>
+                        <p>We may update these terms to reflect changes in law or how we operate. Material changes will be posted here with an updated "Last updated" date. For active engagements, the terms in force on the date the SOW was signed continue to apply unless you and we agree otherwise in writing.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.75s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">12</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Contact</h2>
+                        </div>
+                        <p>Questions, edits, or specific terms you need addressed in an SOW? Email <a href="mailto:hello@syndavo.com">hello@syndavo.com</a>. We read everything and reply within one business day.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative bg-[#050505] border-t border-white/[0.03] overflow-hidden">
+            <div class="absolute inset-0 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pointer-events-none flex justify-between z-0">
+                <div class="w-px h-full bg-white/[0.03]"></div>
+                <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[25%]"></div>
+                <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-1/2 -translate-x-1/2"></div>
+                <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[75%]"></div>
+                <div class="w-px h-full bg-white/[0.03]"></div>
+            </div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent shadow-[0_0_15px_rgba(99,102,241,0.5)] z-20"></div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-white/[0.03]">
+                    <a href="#" class="group relative py-8 lg:pr-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:facebook" class="text-white/40 group-hover:text-[#1877F2] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Facebook</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="https://x.com/syndavo" target="_blank" rel="noopener noreferrer" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 lg:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:x" class="text-white/40 group-hover:text-white transition-colors duration-300" width="18"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">X</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="#" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:youtube" class="text-white/40 group-hover:text-[#FF0000] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Youtube</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="#" class="group relative py-8 lg:pl-8 flex items-center justify-between hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:instagram" class="text-white/40 group-hover:text-[#E4405F] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Instagram</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16 pb-24">
+                    <div class="flex flex-col gap-8 lg:pr-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 pb-12 md:pb-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">01</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">About</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="about.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Our Story</a></li>
+                            <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">How It Works</a></li>
+                            <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Contact</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 md:pl-8 lg:px-8 border-r-0 lg:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">02</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Divisions</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Consulting</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Labs</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo AI</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 lg:px-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">03</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Founders</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Book Discovery Meeting</a></li>
+                            <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">The Process</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">What We Deliver</a></li>
+                            <li><a href="careers.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 md:pl-8 lg:pl-8 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">04</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Legal</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="mailto:hello@syndavo.com" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">hello@syndavo.com</a></li>
+                            <li><a href="terms.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Terms of Service</a></li>
+                            <li><a href="privacy.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Privacy Policy</a></li>
+                            <li><a href="cookies.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Cookie Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-12 border-t border-white/[0.03]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-white/[0.05] rounded-sm flex items-center justify-center">
+                            <img src="assets/logo.png" alt="Syndavo" class="w-3.5 h-3.5 object-contain">
+                        </div>
+                        <span class="text-[11px] text-white/30 font-sans">© 2025 SYNDAVO. ALL RIGHTS RESERVED.</span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                            <span class="text-[11px] text-emerald-500/80 font-mono font-sans">ACCEPTING NEW FOUNDERS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) { entry.target.classList.add("animate"); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+        const cards = document.querySelectorAll(".spotlight-card");
+        document.addEventListener("mousemove", (e) => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+                card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+            });
+        });
+    });
+</script>
+</body></html>

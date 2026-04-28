@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Original design handoff (kept locally as backup, not deployed)
+Syndavo-handoff/
+Syndavo-handoff.zip
+uploads/
+
+# Brand source files & reference PDFs (kept locally, not deployed)
+assets/Syndavo/
+assets/*.pdf
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log

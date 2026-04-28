@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<title>Privacy Policy — Syndavo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; background-color: #020202; }
+.font-serif { font-family: 'Newsreader', serif; }
+.font-manrope { font-family: 'Manrope', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.spotlight-card { position: relative; border-radius: 4px; background-color: rgba(255, 255, 255, 0.02); overflow: hidden; --mouse-x: 0px; --mouse-y: 0px; }
+.spotlight-card::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4), transparent 40%); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0; transition: opacity 0.5s ease; pointer-events: none; z-index: 2; }
+.spotlight-card::after { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1px; background: linear-gradient(225deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; z-index: 1; }
+.spotlight-card:hover::before { opacity: 1; }
+@keyframes animationIn { 0% { opacity: 0; transform: translateY(20px); filter: blur(4px); } 100% { opacity: 1; transform: translateY(0); filter: blur(0px); } }
+.animate-on-scroll { animation-play-state: paused !important; }
+.animate-on-scroll.animate { animation-play-state: running !important; }
+@keyframes beam-drop { 0% { top: -100px; opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+.beam { position: absolute; width: 1px; height: 150px; background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5), transparent); animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.beam-delay-1 { animation-delay: 2s; }
+.beam-delay-2 { animation-delay: 4s; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+.legal-prose p { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.8; margin-bottom: 1rem; }
+.legal-prose strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+.legal-prose ul { list-style: none; padding-left: 0; margin-bottom: 1rem; }
+.legal-prose ul li { color: rgba(255,255,255,0.6); font-size: 15px; line-height: 1.8; padding-left: 1.5rem; position: relative; }
+.legal-prose ul li::before { content: "—"; position: absolute; left: 0; color: rgba(165,180,252,0.5); }
+.legal-prose a { color: rgb(165,180,252); text-decoration: underline; text-decoration-color: rgba(165,180,252,0.3); }
+.legal-prose a:hover { text-decoration-color: rgba(165,180,252,0.8); }
+</style>
+</head>
+<body class="selection:bg-indigo-500/30 selection:text-indigo-100 overflow-x-hidden text-white bg-[#020202]">
+
+<div class="border-x border-white/[0.03] min-h-screen w-full max-w-[1440px] mx-auto relative">
+
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:12rem_24rem] pointer-events-none z-0"></div>
+
+    <div class="absolute inset-0 flex justify-between pointer-events-none z-0 px-6 md:px-12 lg:px-24">
+        <div class="relative w-px h-full bg-white/[0.03] overflow-hidden"><div class="beam"></div></div>
+        <div class="relative w-px h-full bg-white/[0.03] hidden md:block overflow-hidden absolute left-1/2 -translate-x-1/2"><div class="beam beam-delay-1"></div></div>
+        <div class="relative w-px h-full bg-white/[0.03] overflow-hidden"><div class="beam beam-delay-2"></div></div>
+    </div>
+
+    <nav class="relative z-50 border-b border-white/[0.03] backdrop-blur-sm bg-[#020202]/80">
+        <div class="md:px-12 lg:px-24 flex h-20 pr-6 pl-6 items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a href="services.html" class="text-[13px] hover:text-white transition-colors text-white/60">Services</a>
+                <a href="about.html" class="text-[13px] hover:text-white transition-colors text-white/60">About</a>
+                <a href="methodology.html" class="text-[13px] hover:text-white transition-colors text-white/60">How it works</a>
+                <a href="audit.html" class="text-[13px] hover:text-white transition-colors text-white/60">Contact</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="login.html" class="text-[13px] hover:text-white transition-colors hidden sm:block text-white/60">Client Login</a>
+                <button class="group inline-flex overflow-hidden transition-all duration-300 hover:-translate-y-0.5 rounded-sm p-[1px] relative items-center justify-center" onclick="window.location.href='audit.html'">
+                    <span class="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,transparent_75%,#ffffff_100%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+                    <span class="absolute inset-0 rounded-sm bg-zinc-800 transition-opacity duration-300 group-hover:opacity-0"></span>
+                    <span class="flex items-center gap-2 group-hover:text-white text-[11px] font-medium text-zinc-300 bg-black rounded-sm py-2 px-4 relative">
+                        <span class="relative z-10 uppercase tracking-widest font-sans">Book discovery meeting</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="z-10 relative">
+
+        <!-- Hero -->
+        <section class="md:px-12 lg:px-24 md:py-32 grid lg:grid-cols-12 gap-12 border-white/[0.03] border-b pt-24 pr-6 pb-24 pl-6 items-end">
+            <div class="lg:col-span-12 flex flex-col gap-8">
+                <div class="[animation:animationIn_0.8s_ease-out_0.1s_both] animate-on-scroll animate">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-sm border border-indigo-900/40 bg-indigo-900/10 text-[10px] font-medium tracking-widest text-indigo-200/80 uppercase font-sans">
+                        <span class="w-1 h-1 rounded-full bg-indigo-400"></span>
+                        Privacy-first · Last updated April 2026
+                    </span>
+                </div>
+                <h1 class="font-serif text-[2.75rem] sm:text-5xl lg:text-7xl leading-[0.95] text-white tracking-tight [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+                    <span class="block text-white/80 font-newsreader font-light">Privacy,</span>
+                    <span class="block font-light italic font-newsreader">taken seriously.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-white/50 max-w-xl leading-relaxed font-light [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate font-sans">
+                    We're a small, senior team handling sensitive founder information every day. This policy tells you exactly what we collect, why we collect it, and how you stay in control of it.
+                </p>
+            </div>
+        </section>
+
+        <!-- Body -->
+        <section class="p-6 md:p-12 lg:p-24 bg-[#050505] border-b border-white/[0.03]">
+            <div class="max-w-4xl mx-auto grid gap-4">
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">01</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Who controls your data</h2>
+                        </div>
+                        <p>Syndavo LLC is the data controller for personal information collected through this website and during engagements. We serve clients internationally and apply the stricter of local law or the standard set out here — whichever protects you more. Where the EU General Data Protection Regulation (GDPR) applies to an engagement (for example, when we process personal data of EU residents), we comply with it in full.</p>
+                        <p>Data protection questions? Email <a href="mailto:hello@syndavo.com">hello@syndavo.com</a> with the subject line "Privacy request". We respond within two business days.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.25s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">02</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">What we collect</h2>
+                        </div>
+                        <p><strong>Information you give us directly:</strong></p>
+                        <ul>
+                            <li>Name, email, company, and role when you book a discovery meeting or submit a contact form</li>
+                            <li>Project details, business context, and any materials you share during an engagement</li>
+                            <li>Billing information — processed by our payment provider, never stored on our servers</li>
+                        </ul>
+                        <p><strong>Information collected automatically:</strong></p>
+                        <ul>
+                            <li>Standard web analytics — pages visited, time on site, approximate location, device type</li>
+                            <li>Essential cookies for site functionality (see our <a href="cookies.html">cookie policy</a>)</li>
+                        </ul>
+                        <p>We do not collect sensitive categories of data (racial or ethnic origin, political opinions, health data) unless explicitly necessary for an engagement and with your consent.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">03</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Why we collect it</h2>
+                        </div>
+                        <p>Every piece of data we collect maps to one of four legal bases under GDPR:</p>
+                        <ul>
+                            <li><strong>Contract performance</strong> — delivering the services you hired us for</li>
+                            <li><strong>Legitimate interest</strong> — understanding how the site performs, improving our work, and responding to inbound inquiries</li>
+                            <li><strong>Consent</strong> — non-essential cookies, analytics, and any marketing email (always opt-in, never pre-ticked)</li>
+                            <li><strong>Legal obligation</strong> — tax, accounting, and regulatory requirements</li>
+                        </ul>
+                        <p>We never use your data to train AI models, sell to data brokers, or share with advertisers. Period.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.35s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">04</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Who we share it with</h2>
+                        </div>
+                        <p>We share personal data only with service providers that help us run the business, each under a Data Processing Agreement:</p>
+                        <ul>
+                            <li><strong>Google Workspace</strong> — email, documents, meeting scheduling</li>
+                            <li><strong>Notion</strong> — project documentation shared with clients</li>
+                            <li><strong>Stripe</strong> — payment processing (they never share card data back to us)</li>
+                            <li><strong>Cloudflare</strong> — site hosting and DDoS protection</li>
+                            <li><strong>Plausible Analytics</strong> — privacy-first web analytics (no cookies, no personal identifiers)</li>
+                        </ul>
+                        <p>Because we operate internationally, personal data may be processed in the United States or other countries where our vendors are based. For transfers involving EU or UK personal data, we rely on Standard Contractual Clauses or equivalent safeguards recognised under applicable law. We select vendors with strong security and compliance postures, and will match specific cross-border data-transfer requirements documented in your SOW.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">05</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">How long we keep it</h2>
+                        </div>
+                        <ul>
+                            <li><strong>Contact inquiries that don't convert</strong> — deleted after 18 months</li>
+                            <li><strong>Active client data</strong> — retained for the duration of the engagement plus three years</li>
+                            <li><strong>Invoices &amp; financial records</strong> — seven years, per applicable tax and accounting law</li>
+                            <li><strong>Analytics data</strong> — aggregated, retained for 24 months</li>
+                        </ul>
+                        <p>When retention periods expire, data is permanently deleted or fully anonymised.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.45s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">06</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Your rights</h2>
+                        </div>
+                        <p>Under GDPR, you have the right to:</p>
+                        <ul>
+                            <li><strong>Access</strong> the personal data we hold about you</li>
+                            <li><strong>Correct</strong> inaccurate or incomplete data</li>
+                            <li><strong>Delete</strong> your data ("right to be forgotten"), subject to legal retention requirements</li>
+                            <li><strong>Restrict</strong> or object to specific processing activities</li>
+                            <li><strong>Port</strong> your data to another provider in a machine-readable format</li>
+                            <li><strong>Withdraw consent</strong> at any time, with no impact on past processing</li>
+                        </ul>
+                        <p>Email <a href="mailto:hello@syndavo.com">hello@syndavo.com</a> to exercise any of these rights. No forms. No friction. We'll verify your identity and fulfil the request within 30 days.</p>
+                        <p>You also have the right to lodge a complaint with the data protection or privacy regulator in your country of residence — for EU residents, your national supervisory authority; for UK residents, the Information Commissioner's Office; for other jurisdictions, the equivalent body.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">07</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">How we protect it</h2>
+                        </div>
+                        <p>We apply reasonable technical and organisational safeguards: encryption in transit (TLS 1.3), encryption at rest on all client data, multi-factor authentication on every system that holds personal data, and least-privilege access controls internally.</p>
+                        <p>In the unlikely event of a breach that puts your data at risk, we'll notify affected users and the supervisory authority within 72 hours, as GDPR requires.</p>
+                    </div>
+                </div>
+
+                <div class="spotlight-card p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.55s_both] animate-on-scroll animate">
+                    <div class="relative z-10 legal-prose">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="text-[11px] font-mono text-white/30">08</span>
+                            <h2 class="text-2xl md:text-3xl text-white font-newsreader italic font-light">Changes &amp; contact</h2>
+                        </div>
+                        <p>We review this policy annually and update it when our practices or the law changes materially. Updates are posted here with a revised date. For questions, corrections, or formal requests: <a href="mailto:hello@syndavo.com">hello@syndavo.com</a>.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative bg-[#050505] border-t border-white/[0.03] overflow-hidden">
+            <div class="absolute inset-0 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pointer-events-none flex justify-between z-0">
+                <div class="w-px h-full bg-white/[0.03]"></div>
+                <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[25%]"></div>
+                <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-1/2 -translate-x-1/2"></div>
+                <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[75%]"></div>
+                <div class="w-px h-full bg-white/[0.03]"></div>
+            </div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent shadow-[0_0_15px_rgba(99,102,241,0.5)] z-20"></div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-white/[0.03]">
+                    <a href="#" class="group relative py-8 lg:pr-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:facebook" class="text-white/40 group-hover:text-[#1877F2] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Facebook</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="https://x.com/syndavo" target="_blank" rel="noopener noreferrer" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 lg:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:x" class="text-white/40 group-hover:text-white transition-colors duration-300" width="18"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">X</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="#" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:youtube" class="text-white/40 group-hover:text-[#FF0000] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Youtube</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                    <a href="#" class="group relative py-8 lg:pl-8 flex items-center justify-between hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4"><iconify-icon icon="simple-icons:instagram" class="text-white/40 group-hover:text-[#E4405F] transition-colors duration-300" width="20"></iconify-icon><span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Instagram</span></div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors"><iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon></div>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16 pb-24">
+                    <div class="flex flex-col gap-8 lg:pr-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 pb-12 md:pb-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">01</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">About</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="about.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Our Story</a></li>
+                            <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">How It Works</a></li>
+                            <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Contact</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 md:pl-8 lg:px-8 border-r-0 lg:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">02</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Divisions</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Consulting</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Labs</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo AI</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 lg:px-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">03</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Founders</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Book Discovery Meeting</a></li>
+                            <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">The Process</a></li>
+                            <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">What We Deliver</a></li>
+                            <li><a href="careers.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-8 md:pl-8 lg:pl-8 py-12 md:py-0">
+                        <div class="flex flex-col gap-2"><span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">04</span><h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Legal</h4></div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="mailto:hello@syndavo.com" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">hello@syndavo.com</a></li>
+                            <li><a href="terms.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Terms of Service</a></li>
+                            <li><a href="privacy.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Privacy Policy</a></li>
+                            <li><a href="cookies.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Cookie Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-12 border-t border-white/[0.03]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 bg-white/[0.05] rounded-sm flex items-center justify-center">
+                            <img src="assets/logo.png" alt="Syndavo" class="w-3.5 h-3.5 object-contain">
+                        </div>
+                        <span class="text-[11px] text-white/30 font-sans">© 2025 SYNDAVO. ALL RIGHTS RESERVED.</span>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+                            <span class="text-[11px] text-emerald-500/80 font-mono font-sans">ACCEPTING NEW FOUNDERS</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) { entry.target.classList.add("animate"); observer.unobserve(entry.target); }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -5% 0px" });
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+        const cards = document.querySelectorAll(".spotlight-card");
+        document.addEventListener("mousemove", (e) => {
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+                card.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+            });
+        });
+    });
+</script>
+</body></html>
