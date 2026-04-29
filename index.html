@@ -752,9 +752,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
             <!-- Toggle -->
             <div class="inline-flex items-center gap-4 p-1 rounded-full border border-white/10 bg-white/[0.02] backdrop-blur-sm">
                 <span class="text-[10px] font-medium tracking-widest text-white/60 uppercase pl-4 font-sans">Project-based</span>
-                <button class="relative w-12 h-6 rounded-full bg-zinc-800 border border-white/5 transition-colors focus:outline-none">
-                    <span class="absolute left-1 top-1 w-4 h-4 rounded-full bg-white shadow-sm transition-transform duration-300"></span>
-                </button>
+                <div class="relative w-12 h-6 rounded-full bg-zinc-800 border border-white/5"><span class="absolute left-1 top-1 w-4 h-4 rounded-full bg-white shadow-sm"></span></div>
                 <span class="text-[10px] font-medium tracking-widest text-white/40 uppercase pr-4 font-sans">Retainer</span>
             </div>
         </div>
@@ -764,13 +762,8 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
             
             <!-- Starter Plan -->
             <div class="spotlight-card group p-8 rounded-sm [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate flex flex-col h-full relative overflow-hidden" style="--mouse-x: 437px; --mouse-y: -4321.5px;">
-                <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <button class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/5 transition-all">
-                        <iconify-icon icon="solar:add-linear" width="20"></iconify-icon>
-                    </button>
-                </div>
 
-                <div class="mb-8">
+<div class="mb-8">
                     <div class="flex items-baseline gap-1 mb-6">
                         <span class="text-4xl text-white font-light font-sans">Step 01</span>
                         <span class="text-xs text-white/40 uppercase tracking-widest font-sans">/30 min</span>
@@ -811,13 +804,8 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
 
             <!-- Growth Plan -->
             <div class="spotlight-card group p-8 rounded-sm [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate flex flex-col h-full relative overflow-hidden border border-white/10 bg-white/[0.02]" style="--mouse-x: 13.671875px; --mouse-y: -4321.5px;">
-                <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <button class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/5 transition-all">
-                        <iconify-icon icon="solar:add-linear" width="20"></iconify-icon>
-                    </button>
-                </div>
 
-                <div class="mb-8">
+<div class="mb-8">
                     <div class="flex items-baseline gap-1 mb-6">
                         <span class="text-4xl text-white font-light font-sans">Step 02</span>
                         <span class="text-xs text-white/40 uppercase tracking-widest font-sans">/48 hours</span>
@@ -861,13 +849,8 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
 
             <!-- Premium Plan -->
             <div class="spotlight-card group p-8 rounded-sm [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate flex flex-col h-full relative overflow-hidden" style="--mouse-x: -409.6640625px; --mouse-y: -4321.5px;">
-                <div class="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <button class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-white hover:bg-white/5 transition-all">
-                        <iconify-icon icon="solar:add-linear" width="20"></iconify-icon>
-                    </button>
-                </div>
 
-                <div class="mb-8">
+<div class="mb-8">
                     <div class="flex items-baseline gap-1 mb-6">
                         <span class="text-4xl text-white font-light font-sans">Step 03</span>
                         <span class="text-xs text-white/40 uppercase tracking-widest font-sans">/ launch</span>
@@ -1035,14 +1018,14 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                     </p>
                 </div>
                 
-                <button class="group inline-flex w-fit overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] rounded-sm pt-[1px] pr-[1px] pb-[1px] pl-[1px] relative items-center justify-center">
+                <a href="audit.html" class="group inline-flex w-fit overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] rounded-sm pt-[1px] pr-[1px] pb-[1px] pl-[1px] relative items-center justify-center">
                     <span class="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,transparent_75%,#ffffff_100%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
                     <span class="absolute inset-0 rounded-sm bg-zinc-800 transition-opacity duration-300 group-hover:opacity-0"></span>
                     <span class="flex items-center justify-center gap-3 transition-colors duration-300 group-hover:text-white text-sm font-medium text-zinc-300 tracking-tight bg-black w-full h-full rounded-sm pt-4 pr-8 pb-4 pl-8 relative">
                         <span class="relative z-10 font-sans uppercase tracking-widest text-xs">Book your meeting</span>
                         <iconify-icon icon="solar:arrow-right-linear" width="16" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
                     </span>
-                </button>
+                </a>
             </div>
 
             <!-- Right 5 Reasons Grid -->
