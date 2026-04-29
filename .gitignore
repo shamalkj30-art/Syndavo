@@ -17,3 +17,7 @@ assets/*.pdf
 
 # Logs
 *.log
+
+# Unused heavy assets (kept locally, replaced by lighter PNGs / og-image.svg)
+assets/favicon.ico
+assets/logo-full.png
