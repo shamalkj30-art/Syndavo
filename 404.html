@@ -30,7 +30,10 @@
 body { font-family: 'Inter', sans-serif; background-color: #020202; }
 .font-serif { font-family: 'Newsreader', serif; }
 .font-newsreader { font-family: 'Newsreader', serif !important; }
-@keyframes animationIn { 0% { opacity: 0; transform: translateY(20px); filter: blur(4px); } 100% { opacity: 1; transform: translateY(0); filter: blur(0px); } }
+@keyframes animationIn {
+0% { opacity: 0; transform: translateY(20px); }
+100% { opacity: 1; transform: translateY(0); }
+}
 @keyframes beam-drop { 0% { top: -100px; opacity: 0; } 20% { opacity: 1; } 80% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
 .beam { position: absolute; width: 1px; height: 150px; background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5), transparent); animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
 .beam-delay-1 { animation-delay: 2s; }
