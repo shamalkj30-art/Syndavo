@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /forgot-password.html
+
+Sitemap: https://syndavo.com/sitemap.xml

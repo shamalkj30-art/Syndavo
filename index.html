@@ -4,6 +4,19 @@
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 <link rel="apple-touch-icon" href="assets/logo.png">
+<meta name="description" content="Strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company. 48-hour proposals, no long contracts.">
+<link rel="canonical" href="https://syndavo.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Syndavo">
+<meta property="og:title" content="Syndavo — Where vision becomes venture.">
+<meta property="og:description" content="Strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company. 48-hour proposals, no long contracts.">
+<meta property="og:url" content="https://syndavo.com/">
+<meta property="og:image" content="https://syndavo.com/assets/logo-full.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Syndavo — Where vision becomes venture.">
+<meta name="twitter:description" content="Strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company. 48-hour proposals, no long contracts.">
+<meta name="twitter:image" content="https://syndavo.com/assets/logo-full.png">
+<meta name="twitter:site" content="@syndavo">
 <title>Syndavo — Where vision becomes venture.</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
@@ -94,13 +107,33 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #000; }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+/* FAQ accordion */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::marker { display: none; }
+.faq-chevron { transition: transform 0.3s ease; }
+details[open] > summary .faq-chevron { transform: rotate(180deg); }
+details[open] { border-color: rgba(255, 255, 255, 0.15); }
+
+/* a11y: focus + reduced motion + skip link */
+:focus-visible { outline: 2px solid #818cf8; outline-offset: 2px; }
+.skip-link { position: absolute; top: -100px; left: 16px; padding: 10px 18px; background: #fff; color: #000; z-index: 200; border-radius: 4px; font-size: 13px; font-weight: 600; transition: top 0.2s; }
+.skip-link:focus { top: 16px; outline: 2px solid #818cf8; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .beam, .animate-scroll { animation: none !important; }
+}
 </style>
 <meta name="disabled-font-classes" content="font-geist,font-roboto,font-montserrat,font-poppins,font-playfair,font-instrument-serif,font-merriweather,font-bricolage,font-jakarta,font-manrope,font-space-grotesk,font-work-sans,font-pt-serif,font-geist-mono,font-space-mono,font-quicksand,font-nunito,font-oswald,font-dm-sans,font-google-sans-flex">
 <style id="aura-editor-visibility-style">
 .invisible { visibility: hidden !important; }
 </style>
-<link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style></head>
+<link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Syndavo","alternateName":"Syndavo Technology","url":"https://syndavo.com","logo":"https://syndavo.com/assets/logo-full.png","image":"https://syndavo.com/assets/logo-full.png","description":"International strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company.","address":{"@type":"PostalAddress","addressCountry":"US","addressRegion":"WY"},"areaServed":"Worldwide","email":"hello@syndavo.com","sameAs":["https://x.com/syndavo"],"priceRange":"$$$","serviceType":["Business strategy consulting","Technology advisory","Go-to-market planning","Startup roadmap","Fractional advisory","MVP development","AI strategy"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Syndavo","url":"https://syndavo.com","publisher":{"@type":"Organization","name":"Syndavo","logo":"https://syndavo.com/assets/logo-full.png"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does an engagement cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on scope. After a 30-minute discovery call, we send a written proposal within 48 hours: fixed fee, clear timeline, no hidden costs."}},{"@type":"Question","name":"How long do engagements typically run?","acceptedAnswer":{"@type":"Answer","text":"Project-based work usually runs four to eight weeks. Retainers are month-to-month with 30 days notice. We never lock you into long contracts."}},{"@type":"Question","name":"Do you sign NDAs before the discovery call?","acceptedAnswer":{"@type":"Answer","text":"Yes. Email hello@syndavo.com with NDA in the subject and we send a mutual NDA the same business day. Confidentiality is our default from the first call."}},{"@type":"Question","name":"Is everything remote?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are fully remote and async-first. Synchronous calls when they earn their place, async writing for everything else. We work across your time zone."}},{"@type":"Question","name":"What happens after our first call?","acceptedAnswer":{"@type":"Answer","text":"Within 48 hours you receive a written proposal: scope, deliverables, timeline, fee. You accept, revise, or walk away. If you accept, we start within a week."}},{"@type":"Question","name":"We are at idea stage with no team. Are we too early?","acceptedAnswer":{"@type":"Answer","text":"Idea-stage is exactly where we do our best work. The earlier we engage, the more leverage strategy creates. You do not need a team, deck, or deadline."}}]}</script>
+</head>
 <body class="bg-[#020202] text-white selection:bg-indigo-500/30 selection:text-indigo-100 overflow-x-hidden">
+<a href="#main" class="skip-link">Skip to content</a>
 
 
 
@@ -111,7 +144,7 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 
 
 
-<!-- Background (component) added by Aura -->
+
 <div class="aura-background-component pointer-events-none -z-10 w-full top-0 h-[1200px] absolute" data-alpha-mask="80" style="mask-image: linear-gradient(180deg, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(180deg, transparent, black 0%, black 80%, transparent);"><div class="aura-background-component top-0 w-full -z-10 absolute h-full">
   <div data-us-project="guA2nIvok3TuYtPyn8zX" class="absolute w-full h-full left-0 top-0 -z-10"></div>
   <script type="text/javascript">
@@ -155,12 +188,56 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                             <span class="relative z-10 uppercase tracking-widest font-sans" style="">Book a discovery meeting</span>
                         </span>
                     </button>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+                </button>
+            </div>
             </div>
         </nav>
+        <!-- Mobile menu overlay -->
+        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#020202]/95 backdrop-blur-md hidden" role="dialog" aria-modal="true" aria-label="Site menu">
+            <div class="flex flex-col h-full max-w-[1440px] mx-auto">
+                <div class="flex h-20 px-6 items-center justify-between border-b border-white/[0.06]">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                        <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
+                    </a>
+                    <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center text-white/70 hover:text-white" aria-label="Close menu">
+                        <iconify-icon icon="solar:close-circle-linear" width="24"></iconify-icon>
+                    </button>
+                </div>
+                <nav class="flex-1 flex flex-col px-6 pt-10 pb-8 gap-0 overflow-y-auto">
+                    <a href="services.html" class="text-2xl font-newsreader font-light text-white/90 hover:text-white py-5 border-b border-white/[0.04] transition-colors">Services</a>
+                    <a href="about.html" class="text-2xl font-newsreader font-light text-white/90 hover:text-white py-5 border-b border-white/[0.04] transition-colors">About</a>
+                    <a href="methodology.html" class="text-2xl font-newsreader font-light text-white/90 hover:text-white py-5 border-b border-white/[0.04] transition-colors">How it works</a>
+                    <a href="audit.html" class="text-2xl font-newsreader font-light text-white/90 hover:text-white py-5 border-b border-white/[0.04] transition-colors">Contact</a>
+                    <a href="login.html" class="text-base text-white/50 hover:text-white pt-8 transition-colors font-sans">Client Login</a>
+                </nav>
+                <div class="px-6 pb-10">
+                    <a href="audit.html" class="block w-full text-center bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] text-indigo-950 rounded-sm py-4 font-semibold font-sans uppercase tracking-widest text-sm shadow-lg" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
+                        Book discovery meeting
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            (function(){
+                var btn = document.getElementById('mobile-menu-btn');
+                var menu = document.getElementById('mobile-menu');
+                var close = document.getElementById('mobile-menu-close');
+                if (!btn || !menu || !close) return;
+                function open(){ menu.classList.remove('hidden'); btn.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+                function shut(){ menu.classList.add('hidden'); btn.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+                btn.addEventListener('click', open);
+                close.addEventListener('click', shut);
+                menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', shut); });
+                document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !menu.classList.contains('hidden')) shut(); });
+            })();
+        </script>
 
         <!-- Main Content -->
-        <main class="z-10 relative">
+        <main id="main" class="z-10 relative">
             
             <!-- Hero -->
             <section class="md:px-12 lg:px-24 md:py-32 grid lg:grid-cols-12 gap-12 border-white/[0.03] border-b pt-24 pr-6 pb-24 pl-6 gap-x-12 gap-y-12 items-end">
@@ -178,21 +255,18 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                     <p class="text-lg md:text-xl text-white/50 max-w-xl leading-relaxed font-light [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate font-sans" style="">
                         Most founders have a powerful idea and no idea what to do next. Syndavo closes that gap. We're the strategic and technical team you bring in before you build — to make sure what you build is right, fundable, and built to scale.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-5 pt-4 [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
-                        <button class="group shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300 overflow-hidden font-medium text-indigo-950 bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] rounded-sm pt-3 pr-8 pb-3 pl-8 relative shadow-lg" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
+                    <div class="flex flex-col sm:flex-row gap-6 pt-4 items-start sm:items-center [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
+                        <a href="audit.html" class="group shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300 overflow-hidden font-medium text-indigo-950 bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] rounded-sm pt-3.5 pr-9 pb-3.5 pl-9 relative shadow-lg inline-flex" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
                             <div class="group-hover:translate-y-0 transition-transform duration-300 bg-white/40 absolute top-0 right-0 bottom-0 left-0 translate-y-full"></div>
-                            <span class="relative flex items-center gap-2 text-sm tracking-tight font-semibold font-sans" style="">
+                            <span class="relative flex items-center gap-2 text-[15px] tracking-tight font-semibold font-sans">
                                 Book Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4 stroke-[2]"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4 stroke-[2] group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </span>
-                        </button>
-                        <button class="group inline-flex overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] rounded-sm pt-[1px] pr-[1px] pb-[1px] pl-[1px] relative items-center justify-center">
-                            <span class="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,transparent_75%,#ffffff_100%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
-                            <span class="absolute inset-0 rounded-sm bg-zinc-800 transition-opacity duration-300 group-hover:opacity-0"></span>
-                            <span class="flex items-center justify-center gap-2 transition-colors duration-300 group-hover:text-white text-sm font-medium text-zinc-400 tracking-tight bg-gradient-to-b from-zinc-800 to-zinc-950 w-full h-full rounded-sm pt-3 pr-8 pb-3 pl-8 relative shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]">
-                              <span class="relative z-10 font-sans" style="">See how it works</span>
-                            </span>
-                        </button>
+                        </a>
+                        <a href="methodology.html" class="group inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors py-2 font-sans">
+                            <span>See how it works</span>
+                            <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform" width="14"></iconify-icon>
+                        </a>
                     </div>
                 </div>
                 <div class="lg:col-span-4 flex flex-col justify-end gap-12 [animation:animationIn_0.8s_ease-out_0.7s_both] animate-on-scroll animate">
@@ -326,9 +400,11 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
         
         <!-- Top Left: Hero Image Card -->
         <div class="col-span-1 md:col-span-12 lg:col-span-4 row-span-1 lg:row-span-2 relative h-[300px] lg:h-auto overflow-hidden rounded-sm bg-zinc-900 group spotlight-card" style="--mouse-x: 437px; --mouse-y: -1881px;">
-            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6e701264-0c6f-4f78-93ad-7da3acbe3723_1600w.webp" alt="AI Interface" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity group-hover:scale-105 transition-transform duration-700" style="">
-            <div class="absolute inset-0 bg-gradient-to-t from-indigo-950/80 to-transparent mix-blend-multiply"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+            <!-- Brand visualization: oversized logo as watermark on dark gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-indigo-950/40 via-zinc-950 to-black"></div>
+            <img src="assets/logo.png" alt="" aria-hidden="true" class="absolute -right-12 -bottom-12 w-[110%] max-w-none object-contain opacity-[0.18] group-hover:opacity-[0.25] group-hover:scale-105 transition-all duration-700">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.15),transparent_60%)]"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             
             <!-- UI Overlays -->
             <div class="absolute top-6 left-6 text-[10px] font-mono text-indigo-300/60 tracking-widest uppercase font-sans" style="">(001)</div>
@@ -450,7 +526,7 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                     Built for the new <span class="text-white/50 font-newsreader font-light" style="">generation</span> of founders
                 </h3>
                 <p class="text-[11px] uppercase leading-relaxed text-sm font-medium text-zinc-500 tracking-wide border-white/10 border-t mb-6 pt-4">
-                    Fully remote. Async-first. Founders across Europe and Asia — from first idea to funded company.
+                    Fully remote. Async-first. Founders across continents — from first idea to funded company.
                 </p>
                 <div class="border border-white/10 bg-black/40 p-3 rounded-sm">
                     <div class="flex justify-between items-center mb-2">
@@ -512,7 +588,7 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                     <div class="text-[10px] font-mono text-zinc-500 tracking-widest font-sans" style="">[REMOTE · ASYNC]</div>
                 </div>
                 <h3 class="text-3xl md:text-3xl text-white tracking-tight leading-tight mb-8 font-newsreader font-light" style="">
-                    Europe &amp; <span class="text-white/50 font-newsreader font-light" style="">Asia</span> — one team
+                    One team. <span class="text-white/50 font-newsreader font-light" style="">Every time zone.</span>
                 </h3>
             </div>
             
@@ -832,8 +908,104 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 
         </div>
     </div>
+</section>
+
+<!-- FAQ -->
+<section class="lg:py-32 border-white/[0.03] overflow-hidden bg-[#020202] border-b pt-24 pb-24 relative">
+
+    <div class="absolute inset-0 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pointer-events-none flex justify-between z-0">
+        <div class="w-px h-full bg-white/[0.03]"></div>
+        <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-1/2 -translate-x-1/2"></div>
+        <div class="w-px h-full bg-white/[0.03]"></div>
+    </div>
+
+    <div class="z-10 md:px-12 lg:px-24 max-w-[1440px] mr-auto ml-auto pr-6 pl-6 relative">
+
+        <div class="mb-16 [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
+            <div class="inline-flex items-center gap-2 mb-6 border border-white/10 rounded-full px-3 py-1 bg-white/[0.02]">
+                <iconify-icon icon="solar:question-circle-linear" class="text-white/50" width="14"></iconify-icon>
+                <span class="text-[10px] tracking-[0.2em] uppercase text-white/60 font-medium font-sans">Common questions</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl lg:text-6xl text-white font-newsreader italic tracking-tight font-light max-w-3xl">
+                Before you book, <span class="text-white/40 font-newsreader not-italic">a few common ones.</span>
+            </h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-3">
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">What does an engagement cost?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    It depends on scope — and that's the honest answer. After a 30-minute discovery call, we send a written proposal within 48 hours: fixed fee, clear timeline, no hidden costs. You decide whether it works. No pressure, no follow-up calls.
+                </div>
+            </details>
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.35s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">How long do engagements typically run?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    Project-based work usually runs four to eight weeks, depending on scope. Retainers are month-to-month — start when you need us, pause when you don't, with 30 days' notice. We never lock you into long contracts.
+                </div>
+            </details>
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">Do you sign NDAs before the discovery call?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    Yes — happily. Email <a href="mailto:hello@syndavo.com" class="text-indigo-300 hover:text-indigo-200 border-b border-indigo-300/30 hover:border-indigo-200">hello@syndavo.com</a> with "NDA" in the subject and we'll send a mutual NDA the same business day. We also accept reasonable third-party NDAs without negotiation. Even without paperwork, confidentiality is our default from the first call onward.
+                </div>
+            </details>
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.45s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">Is everything remote?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    Yes. We're fully remote and async-first by design — no offices, no travel costs charged to you, no calendar Tetris. Synchronous calls when they earn their place; async writing and reviewing for everything else. We work across your time zone, never against it.
+                </div>
+            </details>
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">What happens after our first call?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    Within 48 hours, you receive a written proposal: scope, deliverables, timeline, fee, and the team. You either accept it, send back a revision, or walk away — there's no pressure either direction. If you accept, we start within a week.
+                </div>
+            </details>
+
+            <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.55s_both] animate-on-scroll animate">
+                <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">We're at idea stage with no team — are we too early?</span>
+                    <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
+                </summary>
+                <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
+                    Idea-stage is exactly where we do our best work. The earlier we engage, the more leverage strategy creates — before assumptions get baked into product decisions and before runway gets spent on the wrong things. You don't need a team, a deck, or a deadline. You need an idea worth pursuing.
+                </div>
+            </details>
+
+        </div>
+
+        <div class="mt-16 text-center [animation:animationIn_0.8s_ease-out_0.6s_both] animate-on-scroll animate">
+            <p class="text-[13px] text-white/50 font-sans mb-4">Have a different question?</p>
+            <a href="mailto:hello@syndavo.com" class="inline-flex items-center gap-2 text-[12px] uppercase tracking-widest text-white/70 hover:text-white transition-colors border-b border-white/20 hover:border-white/60 pb-1 font-sans">
+                Email hello@syndavo.com
+                <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+            </a>
+        </div>
+
+    </div>
 </section><section class="lg:py-32 border-white/[0.03] overflow-hidden bg-[#050505] border-b pt-24 pb-24 relative">
-    
+
     <!-- Vertical Background Lines -->
     <div class="absolute inset-0 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pointer-events-none flex justify-between z-0">
         <div class="w-px h-full bg-white/[0.03]"></div>
@@ -903,9 +1075,9 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
                     <div class="w-10 h-10 border border-white/10 rounded-sm flex items-center justify-center mb-6 bg-white/[0.02] group-hover:bg-white/[0.05] transition-colors">
                         <iconify-icon icon="solar:graph-new-up-linear" class="text-white/80" width="20"></iconify-icon>
                     </div>
-                    <h3 class="text-white font-serif italic text-xl mb-3">Europe &amp; Asia</h3>
+                    <h3 class="text-white font-serif italic text-xl mb-3">Time-zone agnostic</h3>
                     <p class="text-[13px] text-white/50 leading-relaxed font-sans">
-                        Two continents, one coherent team. We work across your time zone — never against it.
+                        One coherent team, distributed globally. We work across your time zone — never against it.
                     </p>
                 </div>
 
@@ -951,53 +1123,55 @@ animation: beam-drop 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
         
         <!-- Social Connections Row -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-b border-white/[0.03]">
-            
-            <!-- Facebook -->
-            <a href="#" class="group relative py-8 lg:pr-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
-                <div class="flex items-center gap-4">
-                    <iconify-icon icon="simple-icons:facebook" class="text-white/40 group-hover:text-[#1877F2] transition-colors duration-300" width="20"></iconify-icon>
-                    <span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Facebook</span>
+        <div class="border-b border-white/[0.03] py-12 lg:py-16">
+                    <div class="max-w-3xl mx-auto text-center px-6 md:px-0">
+                        <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4 font-medium font-sans">Insights, occasionally</div>
+                        <h3 class="text-3xl md:text-4xl text-white font-newsreader italic font-light tracking-tight mb-3">
+                            Frameworks, <span class="text-white/40 font-newsreader not-italic">no filler.</span>
+                        </h3>
+                        <p class="text-[14px] text-white/50 leading-relaxed font-sans mb-8 max-w-md mx-auto">
+                            A short note when we publish something worth reading. No spam, no daily digest. Unsubscribe in one click.
+                        </p>
+                        <form data-newsletter-form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                            <input type="email" required placeholder="name@company.com" class="flex-1 bg-zinc-900/50 border border-white/10 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/20 transition-all placeholder:text-zinc-700 font-sans">
+                            <button type="submit" class="group shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300 overflow-hidden font-medium text-indigo-950 bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] rounded-sm px-6 py-3 relative shadow-lg whitespace-nowrap" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
+                                <span class="text-[11px] font-sans uppercase tracking-widest font-semibold">Subscribe</span>
+                            </button>
+                        </form>
+                        <div data-newsletter-status class="hidden mt-4 text-[12px] text-emerald-400 font-sans"></div>
+                        <p class="text-[10px] text-white/30 font-sans mt-4">Quarterly cadence. By subscribing you agree to our <a href="privacy.html" class="underline decoration-white/20 hover:decoration-white/60">privacy policy</a>.</p>
+                    </div>
                 </div>
-                <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors">
-                    <iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon>
-                </div>
-            </a>
+                <script>
+                    (function(){
+                        var form = document.querySelector('[data-newsletter-form]');
+                        if (!form) return;
+                        form.addEventListener('submit', function(e){
+                            e.preventDefault();
+                            var email = form.querySelector('input[type=email]').value.trim();
+                            if (!email) return;
+                            var subs = JSON.parse(localStorage.getItem('syndavo_newsletter') || '[]');
+                            if (subs.indexOf(email) === -1) subs.push(email);
+                            localStorage.setItem('syndavo_newsletter', JSON.stringify(subs));
+                            form.style.display = 'none';
+                            var status = form.parentElement.querySelector('[data-newsletter-status]');
+                            status.classList.remove('hidden');
+                            status.textContent = "✓  You're on the list. We'll be in touch.";
+                        });
+                    })();
+                </script>
 
-            <!-- X / Twitter -->
-            <a href="https://x.com/syndavo" target="_blank" rel="noopener noreferrer" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 lg:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
-                <div class="flex items-center gap-4">
-                    <iconify-icon icon="simple-icons:x" class="text-white/40 group-hover:text-white transition-colors duration-300" width="18"></iconify-icon>
-                    <span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">X</span>
+                <div class="border-b border-white/[0.03]">
+                    <a href="https://x.com/syndavo" target="_blank" rel="noopener noreferrer" class="group relative py-8 flex items-center justify-between hover:bg-white/[0.02] transition-all duration-500">
+                        <div class="flex items-center gap-4">
+                            <iconify-icon icon="simple-icons:x" class="text-white/40 group-hover:text-white transition-colors duration-300" width="18"></iconify-icon>
+                            <span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Follow Syndavo on X</span>
+                        </div>
+                        <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors">
+                            <iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon>
+                        </div>
+                    </a>
                 </div>
-                <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors">
-                    <iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon>
-                </div>
-            </a>
-
-            <!-- Youtube -->
-            <a href="#" class="group relative py-8 lg:px-8 flex items-center justify-between border-b md:border-b-0 md:border-r border-white/[0.03] hover:bg-white/[0.02] transition-all duration-500">
-                <div class="flex items-center gap-4">
-                    <iconify-icon icon="simple-icons:youtube" class="text-white/40 group-hover:text-[#FF0000] transition-colors duration-300" width="20"></iconify-icon>
-                    <span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Youtube</span>
-                </div>
-                <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors">
-                    <iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon>
-                </div>
-            </a>
-
-            <!-- Instagram -->
-            <a href="#" class="group relative py-8 lg:pl-8 flex items-center justify-between hover:bg-white/[0.02] transition-all duration-500">
-                <div class="flex items-center gap-4">
-                    <iconify-icon icon="simple-icons:instagram" class="text-white/40 group-hover:text-[#E4405F] transition-colors duration-300" width="20"></iconify-icon>
-                    <span class="text-sm font-medium text-white/60 group-hover:text-white transition-colors font-sans">Instagram</span>
-                </div>
-                <div class="w-8 h-8 rounded-full border border-white/5 flex items-center justify-center bg-white/[0.02] group-hover:bg-white/10 transition-colors">
-                    <iconify-icon icon="solar:arrow-right-up-linear" class="text-white/40 group-hover:text-white transition-colors" width="16"></iconify-icon>
-                </div>
-            </a>
-
-        </div>
 
         <!-- Footer Links Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16 pb-24">
