@@ -18,9 +18,11 @@
 <meta name="twitter:image" content="https://syndavo.com/assets/og-image.svg">
 <meta name="twitter:site" content="@syndavo">
 <title>Privacy Policy — Syndavo</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script defer src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://unpkg.com/lucide@latest"></script>
+<script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2tA.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/newsreader/v22/cY9NfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wRA.woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet">
@@ -59,6 +61,24 @@ body { font-family: 'Inter', sans-serif; background-color: #020202; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .beam, .animate-scroll { animation: none !important; }
 }
+
+/* Print styles — legal pages should print clean */
+@media print {
+    body, html { background: #fff !important; color: #000 !important; }
+    nav, footer, .beam, .skip-link, [data-newsletter-form], #mobile-menu, #mobile-menu-btn,
+    .aura-background-component, .spotlight-card::before, .spotlight-card::after { display: none !important; }
+    .spotlight-card { background: #fff !important; border: 1px solid #ddd !important; box-shadow: none !important; page-break-inside: avoid; }
+    h1, h2, h3, h4, h5, h6, p, li, span, div { color: #000 !important; }
+    .legal-prose p, .legal-prose li, .legal-prose strong { color: #1a1a1a !important; }
+    .legal-prose strong { font-weight: 600 !important; }
+    .legal-prose a { color: #1a1a1a !important; text-decoration: underline !important; }
+    .legal-prose ul li::before { color: #666 !important; }
+    section { background: #fff !important; border: none !important; padding: 1rem 0 !important; }
+    .border-x, [class*="border-"] { border-color: transparent !important; }
+    a[href]::after { content: " (" attr(href) ")"; font-size: 0.75em; color: #666; }
+    a[href^="#"]::after, a[href^="javascript:"]::after { content: ""; }
+    @page { margin: 2cm; }
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Syndavo","alternateName":"Syndavo Technology","url":"https://syndavo.com","logo":"https://syndavo.com/assets/og-image.svg","image":"https://syndavo.com/assets/og-image.svg","description":"International strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company.","address":{"@type":"PostalAddress","addressCountry":"US","addressRegion":"WY"},"areaServed":"Worldwide","email":"hello@syndavo.com","sameAs":["https://x.com/syndavo"],"priceRange":"$$$","serviceType":["Business strategy consulting","Technology advisory","Go-to-market planning","Startup roadmap","Fractional advisory","MVP development","AI strategy"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Syndavo","url":"https://syndavo.com","publisher":{"@type":"Organization","name":"Syndavo","logo":"https://syndavo.com/assets/og-image.svg"}}</script>
@@ -80,7 +100,7 @@ body { font-family: 'Inter', sans-serif; background-color: #020202; }
     <nav class="relative z-50 border-b border-white/[0.03] backdrop-blur-sm bg-[#020202]/80">
         <div class="md:px-12 lg:px-24 flex h-20 pr-6 pl-6 items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
-                <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain" fetchpriority="high">
                 <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
             </a>
             <div class="hidden md:flex items-center gap-10">
@@ -109,7 +129,7 @@ body { font-family: 'Inter', sans-serif; background-color: #020202; }
             <div class="flex flex-col h-full max-w-[1440px] mx-auto">
                 <div class="flex h-20 px-6 items-center justify-between border-b border-white/[0.06]">
                     <a href="index.html" class="flex items-center gap-3">
-                        <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                        <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain" fetchpriority="high">
                         <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
                     </a>
                     <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center text-white/70 hover:text-white" aria-label="Close menu">

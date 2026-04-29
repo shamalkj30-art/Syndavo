@@ -18,9 +18,11 @@
 <meta name="twitter:image" content="https://syndavo.com/assets/og-image.svg">
 <meta name="twitter:site" content="@syndavo">
 <title>Syndavo — Where vision becomes venture.</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script defer src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://unpkg.com/lucide@latest"></script>
+<script defer src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50ojIw2tA.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/newsreader/v22/cY9NfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wRA.woff2" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet">
@@ -168,7 +170,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
         <nav class="relative z-50 border-b border-white/[0.03] backdrop-blur-sm bg-[#020202]/80">
             <div class="md:px-12 lg:px-24 flex h-20 pr-6 pl-6 items-center justify-between">
                 <a href="index.html" class="flex items-center gap-3 [animation:animationIn_0.8s_ease-out_0s_both] animate-on-scroll animate">
-                    <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                    <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain" fetchpriority="high">
                     <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans" style="">Syndavo</span>
                 </a>
 
@@ -199,7 +201,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
             <div class="flex flex-col h-full max-w-[1440px] mx-auto">
                 <div class="flex h-20 px-6 items-center justify-between border-b border-white/[0.06]">
                     <a href="index.html" class="flex items-center gap-3">
-                        <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain">
+                        <img src="assets/logo.png" alt="Syndavo" class="w-7 h-7 object-contain" fetchpriority="high">
                         <span class="text-xs font-semibold tracking-[0.15em] uppercase text-white font-sans">Syndavo</span>
                     </a>
                     <button id="mobile-menu-close" class="w-10 h-10 flex items-center justify-center text-white/70 hover:text-white" aria-label="Close menu">
