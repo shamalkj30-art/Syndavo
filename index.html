@@ -134,6 +134,25 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
 <link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Syndavo","alternateName":"Syndavo Technology","url":"https://syndavo.com","logo":"https://syndavo.com/assets/og-image.svg","image":"https://syndavo.com/assets/og-image.svg","description":"International strategy and technology advisory for early-stage founders. We close the gap between a founder's idea and a fundable, scalable company.","address":{"@type":"PostalAddress","addressCountry":"US","addressRegion":"WY"},"areaServed":"Worldwide","email":"hello@syndavo.com","sameAs":["https://x.com/syndavo"],"priceRange":"$$$","serviceType":["Business strategy consulting","Technology advisory","Go-to-market planning","Startup roadmap","Fractional advisory","MVP development","AI strategy"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Syndavo","url":"https://syndavo.com","publisher":{"@type":"Organization","name":"Syndavo","logo":"https://syndavo.com/assets/og-image.svg"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does an engagement cost?","acceptedAnswer":{"@type":"Answer","text":"It depends on scope. After a 30-minute discovery call, we send a written proposal within 48 hours: fixed fee, clear timeline, no hidden costs."}},{"@type":"Question","name":"How long do engagements typically run?","acceptedAnswer":{"@type":"Answer","text":"Project-based work usually runs four to eight weeks. Retainers are month-to-month with 30 days notice. We never lock you into long contracts."}},{"@type":"Question","name":"Do you sign NDAs before the discovery call?","acceptedAnswer":{"@type":"Answer","text":"Yes. Email hello@syndavo.com with NDA in the subject and we send a mutual NDA the same business day. Confidentiality is our default from the first call."}},{"@type":"Question","name":"Is everything remote?","acceptedAnswer":{"@type":"Answer","text":"Yes. We are fully remote and async-first. Synchronous calls when they earn their place, async writing for everything else. We work across your time zone."}},{"@type":"Question","name":"What happens after our first call?","acceptedAnswer":{"@type":"Answer","text":"Within 48 hours you receive a written proposal: scope, deliverables, timeline, fee. You accept, revise, or walk away. If you accept, we start within a week."}},{"@type":"Question","name":"We are at idea stage with no team. Are we too early?","acceptedAnswer":{"@type":"Answer","text":"Idea-stage is exactly where we do our best work. The earlier we engage, the more leverage strategy creates. You do not need a team, deck, or deadline."}}]}</script>
+<style id="fouc-prevention">
+/* Prevent flash of unstyled content while Tailwind CDN + UnicornStudio bootstrap */
+html, body { background-color: #020202; }
+body { opacity: 0; transition: opacity 0.2s ease-out; }
+body.is-ready { opacity: 1; }
+</style>
+<script>
+(function(){
+  function ready(){
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        if (document.body) document.body.classList.add('is-ready');
+      });
+    });
+  }
+  if (document.readyState === 'complete') ready();
+  else window.addEventListener('load', ready);
+})();
+</script>
 </head>
 <body class="bg-[#020202] text-white selection:bg-indigo-500/30 selection:text-indigo-100 overflow-x-hidden">
 <a href="#main" class="skip-link">Skip to content</a>
@@ -220,7 +239,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                 </nav>
                 <div class="px-6 pb-10">
                     <a href="audit.html" class="block w-full text-center bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] text-indigo-950 rounded-sm py-4 font-semibold font-sans uppercase tracking-widest text-sm shadow-lg" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
-                        Book discovery meeting
+                        Book a discovery call
                     </a>
                 </div>
             </div>
@@ -250,26 +269,26 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                     <div class="[animation:animationIn_0.8s_ease-out_0.1s_both] animate-on-scroll animate">
                         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-sm border border-indigo-900/40 bg-indigo-900/10 text-[10px] font-medium tracking-widest text-indigo-200/80 uppercase font-sans" style="">
                             <span class="w-1 h-1 rounded-full bg-indigo-400"></span>
-                            Global consulting &amp; technology advisory
+                            For founders going from idea to launched venture
                         </span>
                     </div>
                     <h1 class="font-serif text-[2.75rem] sm:text-5xl lg:text-7xl leading-[0.95] text-white tracking-tight [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate">
-                        <span class="block text-white/80 font-newsreader font-light" style="">Where vision</span>
-                        <span class="block font-light italic font-newsreader">becomes venture.</span>
+                        <span class="block text-white/80 font-newsreader font-light" style="">We turn early-stage ideas</span>
+                        <span class="block font-light italic font-newsreader">into fundable, scalable companies.</span>
                     </h1>
                     <p class="text-lg md:text-xl text-white/50 max-w-xl leading-relaxed font-light [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate font-sans" style="">
-                        Most founders have a powerful idea and no idea what to do next. Syndavo closes that gap. We're the strategic and technical team you bring in before you build — to make sure what you build is right, fundable, and built to scale.
+                        You have conviction and a strong premise. What you don't have is a model that holds, a market you can actually serve, and a roadmap a team can execute. We build all three — before you spend runway.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-6 pt-4 items-start sm:items-center [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate">
                         <a href="audit.html" class="group shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300 overflow-hidden font-medium text-indigo-950 bg-gradient-to-r from-[#e0e7ff] to-[#a5b4fc] rounded-sm pt-3.5 pr-9 pb-3.5 pl-9 relative shadow-lg inline-flex" style="box-shadow:0 15px 33px -12px rgba(99,102,241,0.6), inset 0 4px 6.3px rgba(255,255,255,0.8);">
                             <div class="group-hover:translate-y-0 transition-transform duration-300 bg-white/40 absolute top-0 right-0 bottom-0 left-0 translate-y-full"></div>
                             <span class="relative flex items-center gap-2 text-[15px] tracking-tight font-semibold font-sans">
-                                Book Consultation
+                                Book a discovery call
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4 stroke-[2] group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                             </span>
                         </a>
                         <a href="methodology.html" class="group inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors py-2 font-sans">
-                            <span>See how it works</span>
+                            <span>See how we work</span>
                             <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform" width="14"></iconify-icon>
                         </a>
                     </div>
@@ -296,92 +315,68 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                 </div>
             </section>
 
-            <!-- Features Grid (Modified to 6 items with numbers) -->
-            <section class="grid border-white/[0.03] md:grid-cols-2 lg:grid-cols-3 md:p-12 lg:p-24 bg-[#020202] border-b px-6 py-6 gap-x-6 gap-y-6">
-                
-                <!-- 01 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate" style="--mouse-x: 437px; --mouse-y: -907.5px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">01</span>
-                    <div class="relative z-10 flex flex-col h-full justify-between gap-16">
-                        <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search w-6 h-6 stroke-[1.5]"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
-                        </div>
-                        <div class="">
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">Strategy &amp; Business Model</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">You leave knowing exactly what your business is, how it makes money, and why it wins in your market. Not a template — a model built around your opportunity.</p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Four Divisions (mirrors /services) -->
+            <section class="grid border-white/[0.03] md:grid-cols-2 lg:grid-cols-4 md:p-12 lg:p-24 bg-[#020202] border-b px-6 py-6 gap-x-6 gap-y-6">
 
-                <!-- 02 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate" style="--mouse-x: 13.671875px; --mouse-y: -907.5px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">02</span>
+                <!-- 01 — Consulting -->
+                <a href="services.html#divisions" class="spotlight-card group p-8 lg:p-10 rounded-sm [animation:animationIn_0.8s_ease-out_0.2s_both] animate-on-scroll animate block">
+                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans">01</span>
                     <div class="relative z-10 flex flex-col h-full justify-between gap-16">
                         <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-code" class="lucide lucide-file-code w-6 h-6 stroke-[1.5]"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 12.5 8 15l2 2.5"></path><path d="m14 12.5 2 2.5-2 2.5"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M2 12h6l2-9 4 18 2-9h6"></path></svg>
                         </div>
                         <div>
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">Go-to-Market Planning</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">Your launch strategy, built from first principles. Target audience, positioning, channels, pricing, and a sequenced 90-day plan that drives your first real traction.</p>
+                            <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2 font-medium font-sans">Strategy</div>
+                            <h3 class="text-xl text-white mb-3 font-newsreader italic font-light tracking-wide">Syndavo Consulting</h3>
+                            <p class="text-[14px] text-white/50 leading-relaxed font-sans">Validated business model, defined market, sequenced roadmap — before a line of code gets written.</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- 03 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate" style="--mouse-x: -409.6640625px; --mouse-y: -907.5px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">03</span>
+                <!-- 02 — Labs -->
+                <a href="services.html#divisions" class="spotlight-card group p-8 lg:p-10 rounded-sm [animation:animationIn_0.8s_ease-out_0.3s_both] animate-on-scroll animate block">
+                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans">02</span>
                     <div class="relative z-10 flex flex-col h-full justify-between gap-16">
                         <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bar-chart-2" class="lucide lucide-bar-chart-2 w-6 h-6 stroke-[1.5]"><path d="M5 21v-6"></path><path d="M12 21V3"></path><path d="M19 21V9"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"></path><path d="M8.5 2h7"></path><path d="M7 16h10"></path></svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">Startup Roadmap</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">A phased, prioritised path from where you are today to a live, operating company. No overwhelm. No guesswork. A plan built for your timeline and your resources.</p>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2 font-medium font-sans">Build</div>
+                            <h3 class="text-xl text-white mb-3 font-newsreader italic font-light tracking-wide">Syndavo Labs</h3>
+                            <p class="text-[14px] text-white/50 leading-relaxed font-sans">Prototypes and MVPs that put real signal in front of real users — fast.</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- 04 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate" style="--mouse-x: 437px; --mouse-y: -1247.75px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">04</span>
+                <!-- 03 — AI -->
+                <a href="services.html#divisions" class="spotlight-card group p-8 lg:p-10 rounded-sm [animation:animationIn_0.8s_ease-out_0.4s_both] animate-on-scroll animate block">
+                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans">03</span>
                     <div class="relative z-10 flex flex-col h-full justify-between gap-16">
                         <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="network" class="lucide lucide-network w-6 h-6 stroke-[1.5]"><rect x="16" y="16" width="6" height="6" rx="1"></rect><rect x="2" y="16" width="6" height="6" rx="1"></rect><rect x="9" y="2" width="6" height="6" rx="1"></rect><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path><path d="M12 12V8"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">Fractional Advisory</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">The strategic co-founder you never had — without the equity. Ongoing monthly support as your business evolves, your decisions get harder, and the stakes get higher.</p>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2 font-medium font-sans">Leverage</div>
+                            <h3 class="text-xl text-white mb-3 font-newsreader italic font-light tracking-wide">Syndavo AI</h3>
+                            <p class="text-[14px] text-white/50 leading-relaxed font-sans">Where AI creates real leverage — identified, integrated, and in production. Not bolted on.</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- 05 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.6s_both] animate-on-scroll animate" style="--mouse-x: 13.671875px; --mouse-y: -1247.75px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">05</span>
+                <!-- 04 — Technology -->
+                <a href="services.html#divisions" class="spotlight-card group p-8 lg:p-10 rounded-sm [animation:animationIn_0.8s_ease-out_0.5s_both] animate-on-scroll animate block">
+                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans">04</span>
                     <div class="relative z-10 flex flex-col h-full justify-between gap-16">
                         <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw w-6 h-6 stroke-[1.5]"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 14h3"></path><path d="M1 9h3"></path><path d="M1 14h3"></path></svg>
                         </div>
-                        <div class="">
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">Software &amp; MVP Development</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">When the strategy is set, we build it. Product engineering, MVP development, and technical execution — so your validated idea becomes a working product, not a Figma file.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 06 -->
-                <div class="spotlight-card group p-8 lg:p-12 rounded-sm [animation:animationIn_0.8s_ease-out_0.7s_both] animate-on-scroll animate" style="--mouse-x: -409.6640625px; --mouse-y: -1247.75px;">
-                    <span class="absolute top-8 right-8 text-[11px] font-mono text-white/20 font-sans" style="">06</span>
-                    <div class="relative z-10 flex flex-col h-full justify-between gap-16">
-                        <div class="w-12 h-12 bg-white/[0.03] border border-white/5 flex items-center justify-center text-white/90 rounded-sm group-hover:scale-110 transition-transform duration-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lock" class="lucide lucide-lock w-6 h-6 stroke-[1.5]"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                        </div>
-                        <div class="">
-                            <h3 class="text-xl text-white mb-3 font-serif italic tracking-wide font-sans" style="">AI Strategy &amp; Integration</h3>
-                            <p class="text-[14px] text-white/50 leading-relaxed font-sans" style="">We identify exactly where AI creates leverage in your business and build it in from day one — not as an afterthought. Automation, integration, and advantage, by design.</p>
+                        <div>
+                            <div class="text-[10px] uppercase tracking-[0.2em] text-white/40 mb-2 font-medium font-sans">Launch</div>
+                            <h3 class="text-xl text-white mb-3 font-newsreader italic font-light tracking-wide">Syndavo Technology</h3>
+                            <p class="text-[14px] text-white/50 leading-relaxed font-sans">Production systems engineered to scale on day one — so what you launch doesn't have to be rebuilt in a year.</p>
                         </div>
                     </div>
-                </div>
+                </a>
 
             </section>
 
@@ -611,7 +606,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                     </ul>
                     <div class="flex items-center justify-between">
                         <span class="text-[10px] font-mono text-zinc-600 font-sans">01</span>
-                        <a href="audit.html" class="text-[11px] uppercase tracking-widest text-white/60 hover:text-white transition-colors border-b border-transparent hover:border-white/40 pb-0.5 font-sans">Book Meeting</a>
+                        <a href="audit.html" class="text-[11px] uppercase tracking-widest text-white/60 hover:text-white transition-colors border-b border-transparent hover:border-white/40 pb-0.5 font-sans">Book a discovery call</a>
                     </div>
                 </div>
             </div>
@@ -698,7 +693,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                     </ul>
                     <div class="flex items-center justify-between">
                         <span class="text-[10px] font-mono text-zinc-600 font-sans">03</span>
-                        <a href="audit.html" class="text-[11px] uppercase tracking-widest text-white/60 hover:text-white transition-colors border-b border-transparent hover:border-white/40 pb-0.5 font-sans">Get Started</a>
+                        <a href="audit.html" class="text-[11px] uppercase tracking-widest text-white/60 hover:text-white transition-colors border-b border-transparent hover:border-white/40 pb-0.5 font-sans">Book a discovery call</a>
                     </div>
                 </div>
             </div>
@@ -782,11 +777,11 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
 
             <details class="rounded-sm border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] transition-colors [animation:animationIn_0.8s_ease-out_0.55s_both] animate-on-scroll animate">
                 <summary class="flex items-center justify-between p-6 lg:p-7 select-none">
-                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">We're at idea stage with no team — are we too early?</span>
+                    <span class="text-base md:text-lg text-white font-medium font-sans pr-6">How much does this typically cost?</span>
                     <iconify-icon icon="solar:alt-arrow-down-linear" class="faq-chevron text-white/40 flex-shrink-0" width="18"></iconify-icon>
                 </summary>
                 <div class="px-6 lg:px-7 pb-6 lg:pb-7 text-[14px] text-white/60 leading-relaxed font-sans border-t border-white/[0.04] pt-5">
-                    Idea-stage is exactly where we do our best work. The earlier we engage, the more leverage strategy creates — before assumptions get baked into product decisions and before runway gets spent on the wrong things. You don't need a team, a deck, or a deadline. You need an idea worth pursuing.
+                    It depends on scope — but we'll never make you guess. After a 30-minute discovery call, you receive a written proposal within 48 hours: fixed fee, clear timeline, no hourly creep. Project engagements typically run mid-five to low-six figures, with a 40% deposit on signature. Retainers are month-to-month. You decide whether it works — no follow-up calls, no pressure.
                 </div>
             </details>
 
@@ -836,7 +831,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                     <span class="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,transparent_75%,#ffffff_100%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
                     <span class="absolute inset-0 rounded-sm bg-zinc-800 transition-opacity duration-300 group-hover:opacity-0"></span>
                     <span class="flex items-center justify-center gap-3 transition-colors duration-300 group-hover:text-white text-sm font-medium text-zinc-300 tracking-tight bg-black w-full h-full rounded-sm pt-4 pr-8 pb-4 pl-8 relative">
-                        <span class="relative z-10 font-sans uppercase tracking-widest text-xs">Book your meeting</span>
+                        <span class="relative z-10 font-sans uppercase tracking-widest text-xs">Book a discovery call</span>
                         <iconify-icon icon="solar:arrow-right-linear" width="16" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
                     </span>
                 </a>
@@ -905,12 +900,11 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
     </div>
 </section><footer class="relative bg-[#050505] border-t border-white/[0.03] overflow-hidden">
     
-    <!-- Vertical Background Lines (4 Column Grid) -->
+    <!-- Vertical Background Lines (3 Column Grid) -->
     <div class="absolute inset-0 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24 pointer-events-none flex justify-between z-0">
         <div class="w-px h-full bg-white/[0.03]"></div>
-        <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[25%]"></div>
-        <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-1/2 -translate-x-1/2"></div>
-        <div class="hidden lg:block w-px h-full bg-white/[0.03] absolute left-[75%]"></div>
+        <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-1/3"></div>
+        <div class="hidden md:block w-px h-full bg-white/[0.03] absolute left-2/3"></div>
         <div class="w-px h-full bg-white/[0.03]"></div>
     </div>
 
@@ -918,7 +912,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent shadow-[0_0_15px_rgba(99,102,241,0.5)] z-20"></div>
 
     <div class="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12 lg:px-24">
-        
+
         <!-- Social Connections Row -->
         <div class="border-b border-white/[0.03] py-12 lg:py-16">
                     <div class="max-w-3xl mx-auto text-center px-6 md:px-0">
@@ -936,7 +930,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                             </button>
                         </form>
                         <div data-newsletter-status class="hidden mt-4 text-[12px] text-emerald-400 font-sans"></div>
-                        <p class="text-[10px] text-white/30 font-sans mt-4">Quarterly cadence. By subscribing you agree to our <a href="privacy.html" class="underline decoration-white/20 hover:decoration-white/60">privacy policy</a>.</p>
+                        <p class="text-[10px] text-white/50 font-sans mt-4">Quarterly cadence. By subscribing you agree to our <a href="privacy.html" class="underline decoration-white/20 hover:decoration-white/60">privacy policy</a>.</p>
                     </div>
                 </div>
                 <script>
@@ -971,61 +965,47 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                 </div>
 
         <!-- Footer Links Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-16 pb-24">
-            
-            <!-- Column 01 -->
-            <div class="flex flex-col gap-8 lg:pr-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 pb-12 md:pb-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 pt-16 pb-24">
+
+            <!-- Column 01 — Company -->
+            <div class="flex flex-col gap-8 md:pr-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 pb-12 md:pb-0">
                 <div class="flex flex-col gap-2">
                     <span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">01</span>
-                    <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">About</h4>
+                    <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Company</h4>
                 </div>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="about.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Our Story</a></li>
-                    <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">How It Works</a></li>
-                    <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Contact</a></li>
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Services</a></li>
+                    <li><a href="about.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">About</a></li>
+                    <li><a href="methodology.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">How we work</a></li>
+                    <li><a href="careers.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Careers</a></li>
+                    <li><a href="audit.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Book a discovery call</a></li>
                 </ul>
             </div>
 
-            <!-- Column 02 -->
-            <div class="flex flex-col gap-8 md:pl-8 lg:px-8 border-r-0 lg:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+            <!-- Column 02 — What we do -->
+            <div class="flex flex-col gap-8 md:px-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
                 <div class="flex flex-col gap-2">
                     <span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">02</span>
-                    <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Divisions</h4>
+                    <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">What we do</h4>
                 </div>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Consulting</a></li>
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Labs</a></li>
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo AI</a></li>
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Syndavo Technology</a></li>
+                    <li><a href="services.html#divisions" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Consulting</a></li>
+                    <li><a href="services.html#divisions" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Labs</a></li>
+                    <li><a href="services.html#divisions" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">AI</a></li>
+                    <li><a href="services.html#divisions" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Technology</a></li>
                 </ul>
             </div>
 
-            <!-- Column 03 -->
-            <div class="flex flex-col gap-8 lg:px-8 border-r-0 md:border-r border-white/[0.03] border-b md:border-b-0 py-12 md:py-0">
+            <!-- Column 03 — Legal -->
+            <div class="flex flex-col gap-8 md:pl-8 py-12 md:py-0">
                 <div class="flex flex-col gap-2">
                     <span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">03</span>
-                    <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Founders</h4>
-                </div>
-                <ul class="flex flex-col gap-4">
-                    <li><a href="audit.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Book Discovery Meeting</a></li>
-                    <li><a href="methodology.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">The Process</a></li>
-                    <li><a href="services.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">What We Deliver</a></li>
-                    <li><a href="careers.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Careers</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 04 -->
-            <div class="flex flex-col gap-8 md:pl-8 lg:pl-8 py-12 md:py-0">
-                <div class="flex flex-col gap-2">
-                    <span class="font-mono text-[10px] text-zinc-600 tracking-widest font-sans">04</span>
                     <h4 class="font-sans text-xs font-semibold tracking-[0.2em] text-white uppercase">Legal</h4>
                 </div>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="mailto:hello@syndavo.com" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">hello@syndavo.com</a></li>
-                    <li><a href="terms.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Terms of Service</a></li>
-                    <li><a href="privacy.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Privacy Policy</a></li>
-                    <li><a href="cookies.html" class="text-[13px] text-white/40 hover:text-white transition-colors duration-300 font-sans">Cookie Settings</a></li>
+                    <li><a href="mailto:hello@syndavo.com" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">hello@syndavo.com</a></li>
+                    <li><a href="terms.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Terms of Service</a></li>
+                    <li><a href="privacy.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Privacy Policy</a></li>
+                    <li><a href="cookies.html" class="text-[13px] text-white/50 hover:text-white transition-colors duration-300 font-sans">Cookie Settings</a></li>
                 </ul>
             </div>
 
@@ -1037,7 +1017,7 @@ details[open] { border-color: rgba(255, 255, 255, 0.15); }
                 <div class="w-6 h-6 bg-white/[0.05] rounded-sm flex items-center justify-center">
                     <img src="assets/logo.png" alt="Syndavo" class="w-3.5 h-3.5 object-contain">
                 </div>
-                <span class="text-[11px] text-white/30 font-sans">© 2025 SYNDAVO. ALL RIGHTS RESERVED.</span>
+                <span class="text-[11px] text-white/50 font-sans">© 2026 SYNDAVO. ALL RIGHTS RESERVED.</span>
             </div>
             <div class="flex items-center gap-6">
                 <div class="flex items-center gap-2">
